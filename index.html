@@ -45,7 +45,7 @@
       theme.ariaLabel = t.theme
       for (const a of nav.querySelectorAll('a')) a.setAttribute('aria-current', a.hreflang === lang)
       document.querySelector('main').innerHTML = `
-        <header><img src="${data.photo}" alt="" width="256" height="256"><h1>${t.name}</h1><p>${t.role}</p></header>
+        <header><picture>${['avif', 'webp'].map(f => `<source srcset="${data.photo}.${f}" type="image/${f}">`).join('')}<img src="${data.photo}.png" alt="" width="256" height="256"></picture><h1>${t.name}</h1><p>${t.role}</p></header>
         <section><h2>${h.about}</h2>${t.about.map(p => `<p>${md(p)}`).join('')}</section>
         <aside><h2>${h.contacts}</h2><address>${data.contacts.map(md).join('')}</address><h2>${h.technologies}</h2>${list([...data.technologies, ''])}</aside>
         <section><h2>${h.experience}</h2>${rows(t.experience)}${md(t.cta)}</section>

@@ -147,6 +147,8 @@ header {
   gap: 0 var(--fluid-md);
 }
 
+picture { display: contents; } /* img stays the grid item */
+
 header img {
   grid-row: span 2;
   inline-size: clamp(64px, 6vw + 40px, 112px);
