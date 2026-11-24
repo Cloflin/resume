@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oleg Ponamarchuk</title>
+  <meta name="description" content="Oleg Ponamarchuk — AI-Native Engineer (Frontend Core) / Frontend Developer">
+  <script>
+    const root = document.documentElement, store = (() => { try { return localStorage } catch { return {} } })()
+    root.style.colorScheme = store.theme ?? ''
+    function toggleTheme() {
+      const off = document.head.appendChild(document.createElement('style'))
+      off.textContent = '*, ::before, ::after { transition: none !important }'
+      const current = root.style.colorScheme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+      store.theme = root.style.colorScheme = current === 'dark' ? 'light' : 'dark'
+      getComputedStyle(root).color
+      setTimeout(() => off.remove())
+    }
+    addEventListener('keydown', e => /^d$/i.test(e.key) && !(e.metaKey || e.ctrlKey || e.altKey) && toggleTheme())
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav aria-label="Language"><button type="button" onclick="print()">PDF</button><button type="button"
+      onclick="toggleTheme()" aria-label="Перемкнути тему"></button></nav>
+  <main></main>
+  <script type="module">
+    const data = await fetch('resume.json').then(r => r.json())
+    const nav = document.querySelector('nav'), [pdf, theme] = nav.querySelectorAll('button')
+    const md = s => s.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\[(.+?)\]\((.+?)\)/g, (_, text, url) => `<a href="${url}"${/^https?:/.test(url) ? ' target="_blank"' : ''}>${text}</a>`)
+    const list = a => `<ul>${a.map(x => Array.isArray(x) ? list(x) : `<li>${md(x)}`).join('')}</ul>`
+    const rows = a => a.map(r => `<h3>${r.title} <b>${r.place}</b> <small>${r.meta}</small></h3>${r.points ? list(r.points) : ''}`).join('')
+
+    pdf.insertAdjacentHTML('afterend', data.tabs.map(k => `<a href="#${k}" hreflang="${k}">${data.i18n[k].tab}</a>`).join(''))
+
+    const render = () => {
+      const lang = [location.hash.slice(1), 'uk'].find(l => Object.hasOwn(data.i18n, l))
+      const t = data.i18n[lang], h = t.headings
+      document.documentElement.lang = lang
+      document.title = `${t.name} (${t.tab})`
+      pdf.textContent = t.pdf
+      theme.ariaLabel = t.theme
+      for (const a of nav.querySelectorAll('a')) a.setAttribute('aria-current', a.hreflang === lang)
+      document.querySelector('main').innerHTML = `
+        <header><img src="${data.photo}" alt="" width="256" height="256"><h1>${t.name}</h1><p>${t.role}</p></header>
+        <section><h2>${h.about}</h2>${t.about.map(p => `<p>${md(p)}`).join('')}</section>
+        <aside><h2>${h.contacts}</h2><address>${data.contacts.map(md).join('')}</address><h2>${h.technologies}</h2>${list([...data.technologies, ''])}</aside>
+        <section><h2>${h.experience}</h2>${rows(t.experience)}${md(t.cta)}</section>
+        <section><h2>${h.expertise}</h2><p>${md(t.expertise)}</p>${md(t.cta)}</section>
+        <section><h2>${h.education}</h2>${rows(t.education)}</section>`
+    };
+
+    addEventListener('hashchange', render);
+    render();
+  </script>
+</body>
+
+</html>

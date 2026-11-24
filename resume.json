@@ -1,0 +1,154 @@
+{
+  "photo": "oleg-ponamarchuk.png",
+  "contacts": [
+    "[oleg.ponamarchuk@icloud.com](mailto:oleg.ponamarchuk@icloud.com?subject=Job%20opening%20matching%20your%20resume)",
+    "[+380508789388](tel:+380508789388)",
+    "[LinkedIn](https://www.linkedin.com/in/oponamarchuk/)",
+    "[GitHub](https://github.com/Cloflin)"
+  ],
+  "technologies": ["Claude Code", "Codex", "JavaScript", "TypeScript", "MCP/AG-UI", "Vercel AI SDK", "Angular", "React", "Vue"],
+  "tabs": ["uk", "en"],
+  "i18n": {
+    "en": {
+      "tab": "EN",
+      "pdf": "PDF",
+      "theme": "Toggle theme",
+      "cta": "[And more — let's talk](mailto:oleg.ponamarchuk@icloud.com?subject=Job%20opening%20matching%20your%20resume)",
+      "name": "Oleg Ponamarchuk",
+      "role": "AI-Native Engineer (Frontend Core) / Frontend Developer",
+      "headings": {
+        "about": "About me",
+        "contacts": "Contacts",
+        "technologies": "Technologies",
+        "experience": "Experience",
+        "expertise": "Additional expertise",
+        "education": "Education"
+      },
+      "about": [
+        "Frontend Developer with **4 years of experience**. I use **AI agents daily in software development** and integrate AI-powered features into products, including streaming chat interfaces, tool calling, structured outputs, and RAG interfaces.",
+        "**Built and trained a factory agent** to create widgets for the Stripo product, automating the entire workflow from Jira task intake to pull request creation.",
+        "**Delivered an [email signature generator](https://stripo.email/signature-generator-tool/create-email-signature/) to production in just 2 weeks.** The product remains easy to maintain thanks to the adoption of **Spec-Driven Development, Context Engineering, and Agentic Workflows**."
+      ],
+      "experience": [
+        {
+          "title": "Frontend Developer",
+          "place": "Stripo.email",
+          "meta": "July 2022",
+          "points": [
+            "Designed and built a maintainable SPA product with AI assistance — an **[email signature generator](https://stripo.email/signature-generator-tool/create-email-signature/) delivered to production in just 2 weeks**, developed in Vue using an **AI Spec-Driven Development** approach.",
+            "Worked on the [stripo.email](https://stripo.email/) website:",
+            [
+              "Identified key project stages and completed a website refactoring project in **3 weeks using AI**.",
+              "**Reduced website build time from 30 minutes to 4 minutes (7.5× faster)**, making future website scaling easier.",
+              "**Improved SEO and LCP (Largest Contentful Paint) performance by 2.5×**, enabling a **1,500% increase in indexed pages (16×)** without compromising Web Vitals."
+            ],
+            "Created and maintain [plugin documentation](https://plugin.stripo.email/), eliminating the need for a third-party documentation service and **saving up to ~$200/month**:",
+            [
+              "Partially reduced the support team's workload by **designing and developing an AI chat assistant for technical documentation**, with end-to-end management of search and generation quality.",
+              "**Built a full-cycle AI agent for documentation updates.** Cost: approximately **$0.20 per task**, saving **2 hours on regular tasks and up to 6 hours on larger tasks**."
+            ]
+          ]
+        }
+      ],
+      "expertise": "**UX/UI expertise** with the ability to define requirements for design systems. **Over 4 years of experience working as a designer.** Hold Anthropic and Microsoft certifications in AI.",
+      "education": [
+        { "title": "Engineering and Electromechanics", "place": "NTU «Dnipro Polytechnic»", "meta": "Master's Degree, 2020" },
+        { "title": "Technical Aesthetics and Design", "place": "NTU «Dnipro Polytechnic»", "meta": "Master's Degree, 2020" }
+      ]
+    },
+    "ru": {
+      "tab": "RU",
+      "pdf": "PDF",
+      "theme": "Переключить тему",
+      "cta": "[И не только — давайте обсудим](mailto:oleg.ponamarchuk@icloud.com?subject=Job%20opening%20matching%20your%20resume)",
+      "name": "Олег Понамарчук",
+      "role": "AI-Native Engineer (Frontend Core) / Frontend Developer",
+      "headings": {
+        "about": "Обо мне",
+        "contacts": "Контакты",
+        "technologies": "Технологии",
+        "experience": "Опыт работы",
+        "expertise": "Дополнительная экспертиза",
+        "education": "Образование"
+      },
+      "about": [
+        "Frontend-разработчик с **4 годами опыта**. **Ежедневно использую AI-агентов в разработке** и интегрирую AI-функциональность в продукты, включая потоковые чат-интерфейсы (Streaming Chat Interfaces), вызов инструментов (Tool Calling), структурированный вывод (Structured Outputs) и RAG-интерфейсы.",
+        "**Создал и обучил агента-фабрику** для генерации виджетов продукта Stripo, автоматизировав полный цикл работы — от получения задачи в Jira до создания Pull Request.",
+        "**Вывел [генератор email-подписей](https://stripo.email/signature-generator-tool/create-email-signature/) в production всего за 2 недели.** Продукт остаётся удобным в поддержке благодаря применению **Spec-Driven Development, Context Engineering и Agentic Workflows**."
+      ],
+      "experience": [
+        {
+          "title": "Frontend Developer",
+          "place": "Stripo.email",
+          "meta": "Июль 2022",
+          "points": [
+            "Спроектировал и разработал поддерживаемый SPA-продукт с использованием AI — **[генератор email-подписей](https://stripo.email/signature-generator-tool/create-email-signature/), выведенный в production всего за 2 недели** после получения технического задания. Разработка велась на Vue с применением подхода **AI Spec-Driven Development**.",
+            "Работал над сайтом [stripo.email](https://stripo.email/):",
+            [
+              "Определил ключевые этапы проекта и выполнил рефакторинг сайта **за 3 недели с использованием AI**.",
+              "**Сократил время сборки сайта с 30 до 4 минут (ускорение в 7,5 раза)**, упростив дальнейшее масштабирование проекта.",
+              "**Улучшил показатели SEO и LCP (Largest Contentful Paint) в 2,5 раза**, что позволило поддерживать **рост количества проиндексированных страниц на 1500% (в 16 раз)** без потери показателей Web Vitals."
+            ],
+            "Создал и поддерживаю [документацию для плагина](https://plugin.stripo.email/), отказавшись от стороннего сервиса документации и **сэкономив до ~$200 в месяц**:",
+            [
+              "Частично снизил нагрузку на команду поддержки, **спроектировав и разработав AI-чат-ассистента для технической документации** с полным циклом управления качеством поиска и генерации.",
+              "**Создал AI-агента полного цикла для обновления документации.** Стоимость выполнения одной задачи — **около $0,20**, экономия времени — **2 часа на стандартных задачах и до 6 часов на более сложных**."
+            ]
+          ]
+        }
+      ],
+      "expertise": "**Экспертиза в UX/UI** и умение формировать требования к дизайн-системам. **Более 4 лет опыта работы дизайнером.** Имею сертификаты Anthropic и Microsoft в области AI.",
+      "education": [
+        { "title": "Инжиниринг и электромеханика", "place": "НТУ «Днепровская политехника»", "meta": "Магистр, 2020" },
+        { "title": "Техническая эстетика и дизайн", "place": "НТУ «Днепровская политехника»", "meta": "Магистр, 2020" }
+      ]
+    },
+    "uk": {
+      "tab": "UA",
+      "pdf": "PDF",
+      "theme": "Перемкнути тему",
+      "cta": "[І не тільки — поговорімо](mailto:oleg.ponamarchuk@icloud.com?subject=Job%20opening%20matching%20your%20resume)",
+      "name": "Олег Понамарчук",
+      "role": "AI-Native Engineer (Frontend Core) / Frontend Developer",
+      "headings": {
+        "about": "Про мене",
+        "contacts": "Контакти",
+        "technologies": "Технології",
+        "experience": "Досвід роботи",
+        "expertise": "Додаткова експертиза",
+        "education": "Освіта"
+      },
+      "about": [
+        "Frontend-розробник із **4 роками досвіду**. **Щодня використовую AI-агентів у розробці** та інтегрую AI-функціональність у продукти, зокрема streaming chat interfaces, tool calling, structured outputs та RAG-інтерфейси.",
+        "**Створив і навчив агента-фабрику** для генерації віджетів продукту Stripo, автоматизувавши повний цикл роботи — від отримання завдання в Jira до створення Pull Request.",
+        "**Вивів [генератор email-підписів](https://stripo.email/signature-generator-tool/create-email-signature/) у production лише за 2 тижні.** Продукт залишається зручним у підтримці завдяки використанню **Spec-Driven Development, Context Engineering та Agentic Workflows**."
+      ],
+      "experience": [
+        {
+          "title": "Frontend Developer",
+          "place": "Stripo.email",
+          "meta": "Липень 2022",
+          "points": [
+            "Спроєктував і розробив масштабований SPA-продукт за допомогою AI — **[генератор email-підписів](https://stripo.email/signature-generator-tool/create-email-signature/), який було запущено в production лише за 2 тижні**. Розробка виконувалася на Vue із застосуванням підходу **AI Spec-Driven Development**.",
+            "Працював над сайтом [stripo.email](https://stripo.email/):",
+            [
+              "Визначив ключові етапи проєкту та виконав рефакторинг сайту **за 3 тижні з використанням AI**.",
+              "**Скоротив час збірки сайту з 30 до 4 хвилин**, що спростило подальше масштабування проєкту.",
+              "**Покращив показники SEO та LCP (Largest Contentful Paint) у 2,5 раза**, забезпечивши **збільшення кількості проіндексованих сторінок на 1500% (у 16 разів)** без погіршення Web Vitals."
+            ],
+            "Створив і підтримую [документацію для плагіна](https://plugin.stripo.email/), відмовившись від стороннього сервісу документації та **заощадивши до ~$200 на місяць**:",
+            [
+              "Частково зменшив навантаження на команду підтримки, **спроєктувавши та розробивши AI-чат-асистента для технічної документації** з повним циклом управління якістю пошуку та генерації.",
+              "**Розробив AI-агента повного циклу для оновлення документації.** Вартість виконання одного завдання — **близько $0,20**, економія часу — **2 години на типових завданнях і до 6 годин на складних**."
+            ]
+          ]
+        }
+      ],
+      "expertise": "**Експертиза в UX/UI** та вміння формувати вимоги до дизайн-систем. **Понад 4 роки досвіду роботи дизайнером.** Маю сертифікати Anthropic і Microsoft з напрямку роботи з AI.",
+      "education": [
+        { "title": "Інжиніринг та електромеханіка", "place": "НТУ «Дніпровська політехніка»", "meta": "Магістр, 2020" },
+        { "title": "Технічна естетика та дизайн", "place": "НТУ «Дніпровська політехніка»", "meta": "Магістр, 2020" }
+      ]
+    }
+  }
+}
